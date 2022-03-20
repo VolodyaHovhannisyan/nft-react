@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 500px;
+    width: 90vw;
+    background-image: linear-gradient(to bottom right, rgb(93, 253, 240), yellow);
+    background-color: rgb(211, 202, 202);
+}
+
+
+/* CSS */
+
+button {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    z-index: 55;
+}
+
+button:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+body {
+    background-color: #333;
+    color: rgb(233, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.head {
+    height: 30vh;
+    width: 14vw;
+    background-color: rgb(20, 9, 179);
+    border: solid 2px red;
+    border-radius: 60% 60%;
+    position: absolute;
+    left: 45vw;
+    top: 20vh;
+}
+
+.leftEye {
+    height: 13vh;
+    width: 5vw;
+    background-color: #fff;
+    border: solid 2px red;
+    position: absolute;
+    left: 51vw;
+    top: 30vh;
+    border-radius: 60% 60%;
+    transform: rotate(15deg);
+    z-index: 11;
+}
+
+.leftEye div {
+    height: 4vh;
+    width: 2vw;
+    background-color: rgb(240, 137, 69);
+    border: solid 2px red;
+    position: absolute;
+    left: 1.5vw;
+    top: 4vh;
+    border-radius: 60% 60%;
+    /* transform: rotate(15deg); */
+    z-index: 13;
+}
+
+.rightEye {
+    height: 13vh;
+    width: 5vw;
+    background-color: #fff;
+    border: solid 2px red;
+    position: absolute;
+    left: 47vw;
+    top: 30vh;
+    border-radius: 60% 60%;
+    transform: rotate(-15deg);
+}
+
+.rightEye div {
+    height: 4vh;
+    width: 2vw;
+    background-color: rgb(255, 174, 0);
+    border: solid 2px red;
+    position: absolute;
+    left: 1vw;
+    top: 4vh;
+    border-radius: 60% 60%;
+    /* transform: rotate(-15deg); */
+}
+
+.bill {
+    height: 6vh;
+    width: 6vh;
+    background-color: orange;
+    position: absolute;
+    left: 50vw;
+    top: 40.5vh;
+    border: solid 2px rgb(2, 190, 134);
+    z-index: 12;
+    border-radius: 75% 0% 0 0;
+    transform: rotate(45deg);
+}
+
+.aBody {
+    height: 45vh;
+    width: 20vw;
+    background-color: rgb(20, 9, 179);
+    border: solid 2px red;
+    border-radius: 60% 60%;
+    position: absolute;
+    left: 42vw;
+    top: 45vh;
+    z-index: 10;
+}
+
+.belly {
+    height: 40vh;
+    width: 16vw;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px red;
+    border-radius: 60% 60%;
+    position: absolute;
+    left: 44vw;
+    top: 45vh;
+    z-index: 11;
+}
+
+.leftHand {
+    height: 25vh;
+    width: 4vw;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px red;
+    border-radius: 60% 60%;
+    position: absolute;
+    left: 60vw;
+    top: 50vh;
+    z-index: 11;
+    transform: rotate(-25deg);
+}
+
+.rightHand {
+    height: 25vh;
+    width: 4vw;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px red;
+    border-radius: 60% 60%;
+    position: absolute;
+    left: 40vw;
+    top: 50vh;
+    z-index: 11;
+    transform: rotate(25deg);
+}
+
+.leftFoot {
+    height: 8vh;
+    width: 7vw;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px red;
+    border-radius: 60% 60%;
+    position: absolute;
+    left: 53vw;
+    top: 85vh;
+    z-index: 11;
+    transform: rotate(15deg);
+}
+
+.rightFoot {
+    height: 8vh;
+    width: 7vw;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px red;
+    border-radius: 60% 60%;
+    position: absolute;
+    left: 43vw;
+    top: 85vh;
+    z-index: 11;
+    transform: rotate(-15deg);
+}
+
+div {
+    border-color: rgb(93, 253, 240);
+}
+
+h5 {
+    font-size: 20px;
+    position: absolute;
+    top: 83vh;
+}
